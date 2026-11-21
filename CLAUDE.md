@@ -11,7 +11,7 @@ Scope (owner, 21.11.2026): visuals on the LED wall during songs, with transition
 - wall-bridge is the sibling LED-wall project; the two stay separate projects.
 
 ## Stack — the house stack, BINDING (owner 21.11.2026)
-Owner: "musi to byt podobny projekt ako ine nase rust projekty, web rozhranie, ikonka dole v tray, vykony nizkolatencny graficky engine". Do not pick another technology for any layer below; a deviation needs the owner's explicit OK on a ticket first. Reference implementations: **wall-bridge** (`zbynekdrlik/wall-bridge`: service + tray + Spout + scanout) and **songplayer** (`zbynekdrlik/songplayer`: `sp-gpu` Direct3D 11 compositor + Spout senders, Leptos UI).
+Owner: "musi to byt podobny projekt ako ine nase rust projekty, web rozhranie, ikonka dole v tray, vykony nizkolatencny graficky engine". This is the DEFAULT, never a freeze. Do not silently pick another technology, and do not silently settle for a weaker one either: at the design step, for each layer the work touches, check from read sources (release notes, crate docs/source, benchmarks) whether a clearly better option exists today (a newer major version, a better crate or engine for this specific need). If one does, propose it on the ticket as a stack upgrade with evidence (what, why better here, cost of moving); the owner decides, and an approved upgrade becomes the house default for every project (owner 21.11.2026: "stack musi byt stale otvoreny aby sa rozvijal k lepsim verziam"). Reference implementations: **wall-bridge** (`zbynekdrlik/wall-bridge`: service + tray + Spout + scanout) and **songplayer** (`zbynekdrlik/songplayer`: `sp-gpu` Direct3D 11 compositor + Spout senders, Leptos UI).
 
 | Layer | Technology |
 |---|---|
