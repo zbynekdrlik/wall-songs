@@ -1,11 +1,15 @@
 # wall-songs — Project Instructions
 
 ## What this project is
-wall-songs replaces Resolume on the SNV **songs PC**: a separate Windows computer with its own Resolume ("resolume songs") that drives the LED wall visuals for the live band during songs.
+wall-songs makes the LED wall visuals for the live band during songs on the SNV **songs PC** (a separate Windows computer, today running its own Resolume, "resolume songs").
 
 Scope (owner, 21.11.2026): visuals on the LED wall during songs, with transitions, reactions to audio and tempo, text effects and the song lyrics.
 
-## What it is NOT (owner corrections, 21.11.2026)
+Vision (owner, 24.11.2026, zbynekdrlik/wall-songs#1): a state-of-the-art, **AI-first** solution optimised for our goal: high-quality dynamic visuals tied to the song and its dynamics, which ANY operator can run without special skills. Resolume has a million manual features nobody can learn, and its results are poor against what we want.
+
+## What it is NOT (owner corrections, 21.11. and 24.11.2026)
+- Not another Resolume and not a feature-for-feature replacement of it: no decks / layers / clips / parameter panels, no migration of the old composition. Never frame a design question as "which Resolume mode first".
+- Output is NDI streams to resolume bridge (bridge PC), which drives the LED wall. Spout is used only on the bridge PC.
 - Not songplayer. songplayer is only a CG player of YouTube videos.
 - Not the other Resolume ("resolume bridge") on the SNV bridge PC, which wall-bridge may replace later. Sermon visuals stay on that other Resolume.
 - wall-bridge is the sibling LED-wall project; the two stay separate projects.
